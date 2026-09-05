@@ -122,7 +122,7 @@ https://discord.com/developers/applications
 - `Token` - токен Discord-бота.
 - `GuildId` - ID Discord-сервера.
 - `OwnerRoleIds` - список ролей владельцев. Наличие любой одной роли даёт полный доступ.
-- `HeartbeatIntervalSeconds` - как часто лидер обновляет аренду в общей БД.
+- `HeartbeatIntervalSeconds` - как часто лидер обновляет "владение ботом" в общей БД.
 - `LeaderTtlSeconds` - через сколько секунд без heartbeat лидер считается отключённым.
 - `DisableFailover` - отключает автоматический выбор лидера.
 
@@ -139,7 +139,7 @@ https://discord.com/developers/applications
 - настройки;
 - статусные сообщения;
 
-Если база не настроена, плагин использует JSON-файлы рядом с плагином.
+Если база данных не настроена, плагин использует JSON-файлы рядом с плагином.
 
 ### OwnerRoleIds и SetupRoleIds
 
