@@ -39,7 +39,7 @@ DiscordAdminConsole - плагин для CounterStrikeSharp и Counter-Strike 2
 
 ## Установка
 
-1. Соберите проект или скачайте скомпилированный проект под названием `DiscordAdminConsole.zip`.
+1. Соберите проект или скачайте скомпилированный проект под названием `DiscordAdminConsole.7z` или `DiscordAdminConsole.zip`.
 2. Перенесите содержимое архива по пути:
 
 ```text
@@ -207,19 +207,17 @@ https://discord.com/developers/applications
 css_ban {PLAYER} {TIME} "{REASON}"
 ```
 
-Пример команды Pisex:
+Пример команды Pisex Admin System:
 
 ```text
 mm_ban {STEAMID} {TIME_SECONDS} "{REASON}"
 ```
 
-Если администратор вводит `30`, команда Pisex будет выполнена примерно так:
+Если администратор вводит `30`, команда Pisex Admin System будет выполнена примерно так:
 
 ```text
 mm_ban 76561198000000000 1800 "Cheating"
 ```
-
-`30` минут превращаются в `1800` секунд.
 
 ## Несколько серверов и общий бот
 
