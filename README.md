@@ -42,12 +42,10 @@ DiscordAdminConsole - плагин для CounterStrikeSharp и Counter-Strike 2
 ```text
 addons/counterstrikesharp/plugins/
 ```
-
-3. Убедитесь, что вместе с плагином присутствует `Newtonsoft.Json.dll`. CounterStrikeSharp требует эту библиотеку при загрузке типов плагина.
-4. Запустите сервер. CounterStrikeSharp создаст конфигурацию плагина.
-5. Заполните токен бота, ID Discord-сервера и ID ролей владельцев.
-6. Перезапустите сервер.
-7. В Discord выполните команду настройки панели.
+3. Запустите сервер. CounterStrikeSharp создаст конфигурацию плагина.
+4.Заполните токен бота, ID Discord-сервера и ID ролей владельцев.
+5. Перезапустите сервер.
+6. В Discord выполните команду настройки панели.
 
 ## Discord-бот
 
