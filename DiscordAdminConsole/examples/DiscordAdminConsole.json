@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "Debug": false,
+  "Database": {
+    "Host": "",
+    "Port": 3306,
+    "Database": "",
+    "Username": "",
+    "Password": ""
+  },
+  "Discord": {
+    "Token": "PASTE_BOT_TOKEN",
+    "GuildId": 123456789012345678,
+    "OwnerRoleIds": [111111111111111111],
+    "HeartbeatIntervalSeconds": 5,
+    "LeaderTtlSeconds": 15,
+    "DisableFailover": false
+  },
+  "DateFormat": "dd.MM.yyyy HH:mm:ss",
+  "AllowedChannelIds": [],
+  "Panel": {
+    "SlashCommandName": "setup-admin-console",
+    "Title": "🛠️ Консоль администратора",
+    "Description": "Быстрое меню для выполнения команд.",
+    "ShowRawRconButton": true
+  },
+  "Security": {
+    "SetupRoleIds": [],
+    "EnableRawRcon": true,
+    "CooldownSeconds": 5,
+    "MaxActionsPerMinute": 12,
+    "MaxCommandLength": 200,
+    "SessionTimeoutMinutes": 10,
+    "CommandTimeoutSeconds": 5,
+    "CacheTtlMinutes": 5
+  },
+  "Integrations": {
+    "PisexAdminSystem": false
+  },
+  "Monitoring": {
+    "UpdateIntervalSeconds": 60,
+    "OnlineColor": "#2ECC71",
+    "OfflineColor": "#E74C3C"
+  }
+}

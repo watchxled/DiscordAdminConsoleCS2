@@ -1,0 +1,10 @@
+C:\Users\Илья\Desktop\project\DiscordAdminConsole\obj\Release\DiscordAdminConsole.csproj.AssemblyReference.cache
+C:\Users\Илья\Desktop\project\DiscordAdminConsole\obj\Release\DiscordAdminConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Илья\Desktop\project\DiscordAdminConsole\obj\Release\DiscordAdminConsole.AssemblyInfoInputs.cache
+C:\Users\Илья\Desktop\project\DiscordAdminConsole\obj\Release\DiscordAdminConsole.AssemblyInfo.cs
+C:\Users\Илья\Desktop\project\DiscordAdminConsole\obj\Release\DiscordAdminConsole.csproj.CoreCompileInputs.cache
+C:\Users\Илья\Desktop\project\DiscordAdminConsole\bin\Release\DiscordAdminConsole.deps.json
+C:\Users\Илья\Desktop\project\DiscordAdminConsole\bin\Release\DiscordAdminConsole.dll
+C:\Users\Илья\Desktop\project\DiscordAdminConsole\obj\Release\DiscordAdminConsole.dll
+C:\Users\Илья\Desktop\project\DiscordAdminConsole\obj\Release\refint\DiscordAdminConsole.dll
+C:\Users\Илья\Desktop\project\DiscordAdminConsole\obj\Release\ref\DiscordAdminConsole.dll
