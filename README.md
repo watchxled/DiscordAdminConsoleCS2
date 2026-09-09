@@ -1,16 +1,21 @@
 <h1 align="center"> DiscordAdminConsole</h1>
 <p align="center"> <a href="README.md">[RU]</a> | <a href="README-en.md">[EN]</a> </p>
+
+---
+
+# Discord Admin Console
+
 DiscordAdminConsole - плагин для CounterStrikeSharp и Counter-Strike 2.
 
 Он подключает CS2-сервер к Discord-боту и позволяет администраторам управлять сервером через удобную панель в Discord. Через панель можно выбрать сервер, посмотреть игроков, выполнить RCON-команду, выдать наказание и посмотреть состояние игровых серверов.
 
-## Что умеет плагин
+## Возможности
 
 - Подключаться к Discord-боту через bot token.
 - Работать с одним или несколькими CS2-серверами.
 - Выполнять RCON-команды из Discord.
 - Показывать список игроков с userid и SteamID64.
-- Выдавать и снимать наказания:
+- Выдавать и снимать наказания.
 - Поддерживать обычные CSS-команды и команды Pisex Admin System.
 - Переводить время из минут в секунды для команд Pisex `mm_*`.
 - Передавать причину наказания в кавычках.
@@ -24,6 +29,7 @@ DiscordAdminConsole - плагин для CounterStrikeSharp и Counter-Strike 2
 - Ограничивать частоту административных действий.
 - Хранить данные в MySQL или локальных JSON-файлах.
 - Использовать общую MySQL для нескольких экземпляров плагина и автоматического выбора контроллера.
+- **Локализация:** английский по умолчанию, русский через `"Language": "ru"` в конфиге (`lang/en.json`, `lang/ru.json`, можно править без пересборки).
 
 ## Требования
 
@@ -36,14 +42,14 @@ DiscordAdminConsole - плагин для CounterStrikeSharp и Counter-Strike 2
 
 ## Установка
 
-1. Соберите проект или скачайте скомпилированный проект под названием `DiscordAdminConsole.7z` или `DiscordAdminConsole.zip`.
+1. Соберите проект или скачайте скомпилированный релиз (`DiscordAdminConsole.7z` или `DiscordAdminConsole.zip`).
 2. Перенесите содержимое архива по пути:
 
 ```text
 addons/counterstrikesharp/plugins/
 ```
 3. Запустите сервер. CounterStrikeSharp создаст конфигурацию плагина.
-4.Заполните токен бота, ID Discord-сервера и ID ролей владельцев.
+4. Заполните токен бота, ID Discord-сервера и ID ролей владельцев. При необходимости укажите `"Language": "en"` или `"ru"`.
 5. Перезапустите сервер.
 6. В Discord выполните команду настройки панели.
 
@@ -58,9 +64,7 @@ https://discord.com/developers/applications
 - View Channels;
 - Send Messages;
 - Embed Links;
-- Use External Emojis.
-- Read Message History;
-- Manage Messages.
+- Use External Emojis;
 - Read Message History;
 - Manage Messages.
 
@@ -74,6 +78,7 @@ https://discord.com/developers/applications
 {
   "Version": 1,
   "Debug": false,
+  "Language": "en",
   "Database": {
     "Host": "",
     "Port": 3306,
@@ -115,12 +120,19 @@ https://discord.com/developers/applications
 }
 ```
 
+### Язык
+
+- `en` (по умолчанию) - все сообщения бота на английском.
+- `ru` - все сообщения бота на русском.
+
+Файлы языков лежат в папке `lang/` рядом с DLL плагина (`en.json`, `ru.json`). Они распаковываются автоматически при первом запуске, и их можно править прямо на сервере - пересборка не нужна. Отсутствующие ключи берутся из английского файла. Ввод `вкл/выкл/навсегда` работает на обоих языках.
+
 ### Discord
 
 - `Token` - токен Discord-бота.
 - `GuildId` - ID Discord-сервера.
 - `OwnerRoleIds` - список ролей владельцев. Наличие любой одной роли даёт полный доступ.
-- `HeartbeatIntervalSeconds` - как часто лидер обновляет "владение ботом" в общей БД.
+- `HeartbeatIntervalSeconds` - как часто лидер обновляет «владение ботом» в общей БД.
 - `LeaderTtlSeconds` - через сколько секунд без heartbeat лидер считается отключённым.
 - `DisableFailover` - отключает автоматический выбор лидера.
 
@@ -135,7 +147,7 @@ https://discord.com/developers/applications
 - роли;
 - флаги;
 - настройки;
-- статусные сообщения;
+- статусные сообщения.
 
 Если база данных не настроена, плагин использует JSON-файлы рядом с плагином.
 
@@ -224,7 +236,7 @@ mm_ban 76561198000000000 1800 "Cheating"
 4. Добавить все игровые серверы через `/server-add`.
 5. Использовать один Discord-токен.
 
-В каждый момент только один сервер работает как "лидер". Если он отключается, другой сервер после истечения `LeaderTtlSeconds` становится "лидером".
+В каждый момент только один сервер работает как «лидер». Если он отключается, другой сервер после истечения `LeaderTtlSeconds` становится «лидером».
 
 ## Сборка
 
@@ -235,3 +247,5 @@ dotnet restore
 dotnet build -c Release
 dotnet publish -c Release -o publish2
 ```
+
+Артефакты сборки (`bin/`, `obj/`) исключены из репозитория через `.gitignore` - они создаются автоматически при сборке.
