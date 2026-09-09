@@ -1,5 +1,5 @@
-# DiscordAdminConsole
-
+<h1 align="center"> DiscordAdminConsole</h1>
+<p align="center"> <a href="README.md">[RU]</a> | <a href="README-en.md">[EN]</a> </p>
 DiscordAdminConsole - плагин для CounterStrikeSharp и Counter-Strike 2.
 
 Он подключает CS2-сервер к Discord-боту и позволяет администраторам управлять сервером через удобную панель в Discord. Через панель можно выбрать сервер, посмотреть игроков, выполнить RCON-команду, выдать наказание и посмотреть состояние игровых серверов.
