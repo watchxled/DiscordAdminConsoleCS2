@@ -1,4 +1,5 @@
-# Discord Admin Console
+<h1 align="center"> DiscordAdminConsole</h1>
+<p align="center"> <a href="README.md">[RU]</a> | <a href="README-en.md">[EN]</a> </p>
 
 DiscordAdminConsole is a plugin for CounterStrikeSharp and Counter-Strike 2.
 
